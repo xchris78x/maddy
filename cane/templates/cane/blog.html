@@ -1,0 +1,17 @@
+{% extends 'cane/base.html' %}
+
+{% block content%}
+
+<h1 style="text-align: center; color: green;">Chi sono</h1><br>
+
+
+
+{% for blog in blogs %}
+
+<h2>{{ blog.titolo }}</h2>
+<h4>{{ blog.data }}</h4>
+<h4>{{ blog.inserzione }}</h4><br><hr>
+
+{% endfor %}
+
+{% endblock %}
