@@ -4,17 +4,33 @@
 
 {% load static %}
 
-<link rel="stylesheet" href="{% static 'cane/style.css' %}">
+<style>
+    @media (max-width: 480px) {
+    body {
+        background-image: url('{% static 'cane/index2-mobile.jpg' %}'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center center;">
+    }
+}
 
-<body style="background-image: url('{% static 'cane/index2.jpg' %}'); background-repeat: no-repeat; background-size: 100%;">
-    
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-image: url('{% static 'cane/index2-pad.jpg' %}'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center center;">
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        background-image: url('{% static 'cane/index2.jpg' %}'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center center;">
+   }
+}
+</style>
+
 </body>
+
+
+
 <div style="text-align: center; color: #1a0aac; font-size: 50px; font-family: "Sofia", sans-serif;">
     <h1>La Casa Di Ameliè</h1>    
 </div>
-
-
-<div style="background-image: url(img/index2.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center center;"></div>
 
 
 <div style="text-align: center; color: aquamarine; margin-top: 5%; font-size: 3vh;">
